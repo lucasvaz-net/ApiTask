@@ -20,14 +20,17 @@ Esta API permite o gerenciamento de tarefas com funcionalidades de CRUD e autent
 ## Instalação
 
 1. Clone o repositório:
- 
-    git clone <URL>
-    cd project-root
-
+   ```plaintext
+  git clone <URL>
+  cd project-root
+    ``` 
 
 2. Instale as dependências:
-  
-    npm install
+
+```plaintext
+npm install
+```
+    
 
 
 3. Configure o arquivo `.env` com as seguintes variáveis:
@@ -37,8 +40,10 @@ Esta API permite o gerenciamento de tarefas com funcionalidades de CRUD e autent
     
 
 4. Inicie o servidor:
- 
-    npm start
+   ```plaintext
+   npm start
+    ```
+   
     
 
 ## Uso
@@ -75,8 +80,10 @@ Response:
 
 ## Testes
 Para rodar os testes, utilize o comando:
+   ```plaintext
+    npm test
+   ```
 
-npm test
 
 Os testes foram implementados utilizando Mocha e Chai. Eles cobrem os principais endpoints da API, garantindo que todas as funcionalidades funcionem corretamente.
 
