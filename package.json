@@ -1,0 +1,34 @@
+{
+  "name": "apitask",
+  "version": "1.0.0",
+  "description": "API para gerenciamento de tarefas com autenticação de usuários",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "mocha 'test/**/*.test.js' --timeout 10000 --exit"
+  },
+  "author": "Lucas Vaz",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "express-validator": "^7.1.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "mocha": "^10.6.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^7.0.0"
+  }
+}
