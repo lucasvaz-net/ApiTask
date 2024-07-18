@@ -1,7 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const { faker } = require('@faker-js/faker');
-const app = require('../src/app'); // Certifique-se de que 'app.js' exporta app corretamente
+const app = require('../src/app'); 
 const UserModel = require('../src/models/user');
 const TaskModel = require('../src/models/task');
 
@@ -15,11 +15,11 @@ describe('Task Controller', () => {
   let taskId;
 
   before(async () => {
-    // Limpar o banco de dados antes de rodar os testes
+    
     await UserModel.sync({ force: true });
     await TaskModel.sync({ force: true });
 
-    // Registrar e autenticar um usuário para obter um token
+    
     const fakeUser = {
       username: faker.internet.userName(),
       email: faker.internet.email(),

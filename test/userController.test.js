@@ -1,7 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const { faker } = require('@faker-js/faker');
-const app = require('../src/app'); // Certifique-se de que 'app.js' exporta app corretamente
+const app = require('../src/app'); 
 const UserModel = require('../src/models/user');
 
 chai.use(chaiHttp);
@@ -42,13 +42,13 @@ describe('User Controller', () => {
         lastName: faker.person.lastName()
       };
 
-      // Registrar o usuário pela primeira vez
+     
       chai.request(app)
         .post('/api/users/register')
         .send(duplicateUser)
         .end((err, res) => {
           res.should.have.status(201);
-          // Tentar registrar o usuário novamente
+      
           chai.request(app)
             .post('/api/users/register')
             .send(duplicateUser)
