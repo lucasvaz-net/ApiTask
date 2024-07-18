@@ -21,9 +21,9 @@ Esta API permite o gerenciamento de tarefas com funcionalidades de CRUD e autent
 
 1. Clone o repositório:
    ```plaintext
-  git clone <URL>
-  cd project-root
-    ``` 
+     git clone <URL>
+     cd project-root
+      ``` 
 
 2. Instale as dependências:
 
