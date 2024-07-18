@@ -10,7 +10,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: `http://localhost:${process.env.PORT || 3001}`,
+        url: process.env.NODE_ENV === 'production' ? 'https://apitask.lucasvaz.dev.br' : `http://localhost:${process.env.PORT || 3000}`,
       },
     ],
     components: {
