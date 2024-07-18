@@ -83,29 +83,3 @@ Os testes foram implementados utilizando Mocha e Chai. Eles cobrem os principais
 ## Documentação da API
 Para mais detalhes sobre os endpoints e como utilizá-los, acesse a documentação Swagger.
 
-Estrutura do Projeto
-
-project-root
-├── src
-│ ├── controllers
-│ │ ├── taskController.js
-│ │ └── userController.js
-│ ├── middlewares
-│ │ ├── authenticate.js
-│ │ └── errorHandler.js
-│ ├── models
-│ │ ├── task.js
-│ │ └── user.js
-│ ├── routes
-│ │ ├── taskRoutes.js
-│ │ └── userRoutes.js
-│ ├── database
-│ │ ├── connection.js
-│ └── swaggerSchemas.js
-│ └── app.js
-├── test
-│ ├── taskController.test.js
-│ └── userController.test.js
-├── .env
-├── package.json
-└── README.md
