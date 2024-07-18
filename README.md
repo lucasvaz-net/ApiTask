@@ -88,15 +88,15 @@ Estrutura do Projeto
 project-root
 │
 ├── src
-│   ├── controllers
-│   │   ├── taskController.js
-│   │   └── userController.js
-│   ├── middlewares
-│   │   ├── authenticate.js
-│   │   └── errorHandler.js
-│   ├── models
-│   │   ├── task.js
-│   │   └── user.js
+│   ├── controllers 
+│   │   ├── taskController.js 
+│   │   └── userController.js 
+│   ├── middlewares 
+│   │   ├── authenticate.js 
+│   │   └── errorHandler.js 
+│   ├── models 
+│   │   ├── task.js 
+│   │   └── user.js 
 │   ├── routes
 │   │   ├── taskRoutes.js
 │   │   └── userRoutes.js
