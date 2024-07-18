@@ -7,21 +7,20 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swaggerSchemas');
-const requestIp = require('request-ip'); // Adiciona esta linha
+const requestIp = require('request-ip'); 
 require('dotenv').config();
 
 const app = express();
 
 app.use(helmet());
 
-app.use(requestIp.mw()); // Adiciona esta linha
-
+app.use(requestIp.mw()); 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 100,
   message: 'Muitas requisições vindas deste IP, por favor tente novamente após 15 minutos.',
   keyGenerator: (req) => {
-    return req.clientIp; // Use o clientIp em vez do req.ip
+    return req.clientIp; 
   },
 });
 
@@ -43,7 +42,7 @@ app.use(errorHandler);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
