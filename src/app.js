@@ -42,7 +42,7 @@ app.use(errorHandler);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-const PORT = process.env.PORT || 0; 
+const PORT = process.env.PORT || 3000; 
 const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${server.address().port}`);
 });
